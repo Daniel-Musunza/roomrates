@@ -105,6 +105,7 @@ const RoomRates = () => {
     },
     // Add more rooms here...
   ];
+  
   const totalRooms = rooms.length;
   const totalRates = rooms.reduce((total, room) => total + room.rates.length, 0);
 
@@ -132,21 +133,20 @@ const RoomRates = () => {
                 <h3>{room.offer_room_type}</h3>
                 <p>
                   <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-square" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3891b7" className="bi bi-square" viewBox="0 0 16 16">
                       <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                     </svg> {room.space} sq m
                   </span>
-                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-people-fill" viewBox="0 0 16 16">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3891b7" className="bi bi-people-fill" viewBox="0 0 16 16">
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
                   </svg> Sleeps {room.occupants} people
                   </span>
 
-                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-segmented-nav" viewBox="0 0 16 16">
-                    <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6 3h4V5H6zm9-1V6a1 1 0 0 0-1-1h-3v4h3a1 1 0 0 0 1-1" />
-                  </svg>  {room.bedType}
+                  <span><svg width="16" height="16"  style={{marginRight: '5px'}} focusable="false" data-prefix="fas" data-icon="bed" className="svg-inline--fa fa-bed " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#3891b7" d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"></path></svg> 
+                  {room.bedType}
                   </span>
                 </p>
-                <a href="">More room details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <a href="">More room details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3891b7" class="bi bi-chevron-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
                 </svg></a>
 
